@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EVOLVE YOGA || Sign-up Form</title>
+</head>
+
+<body class="page">
+    <header class="page__background">
+        <div class="background__text">
+            <ion-icon name="flame-outline"></ion-icon>
+            <h1 class="text__title">Evolve Yoga</h1>
+        </div>
+        <div class="background__source">
+            Photo by <a class="source__link"
+                href="https://unsplash.com/@antonmislawsky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Anton
+                Mislawsky</a> on <a class="source__link"
+                href="https://unsplash.com/fr/photos/7K4t5352YOY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </div>
+    </header>
+    <main class="page__main">
+        <div class="main__top">
+            <p class="top__text">
+                This is not a real online service. You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+            </p>
+            <p class="top__text">You <em>know</em> you want to.</p>
+        </div>
+        <div class="main__form">
+            <h2 class="form__title">Let's do this!</h2>
+            <form action='' method='get' class='form__form'>
+                <fieldset class="form__field">
+                    <div class='form__row'>
+                    <label class="row__label" for='first-name'>First Name
+                        <input class="row__input" id='first-name' name='first-name' type='text' placeholder="first name" required/>
+                    </label>
+                  </div>
+                  <div class='form__row'>
+                    <label class="row__label" for='last-name'>Last Name
+                        <input class="row__input" id='last-name' name='last-name' type='text' required placeholder="last name">
+                    </label>
+                    
+                  </div>
+                  <div class='form__row'>
+                    <label class="row__label" for='email'>Email<input class="row__input" 
+                        id='email'
+                        name='email'
+                        type='email' placeholder="email@example.com"required></label>
+                    
+                  </div>
+                  <div class='form__row'>
+                    <label class="row__label" for='phone'>Phone Number <input class="row__input"
+                        id='phone'
+                        name='phone'
+                        type='tel' pattern='[0-9]{10}' required placeholder="000-000-0000"
+                        /></label>
+                    
+                  </div>
+                  <div class='form__row'>
+                    <label class="row__label" for='password'>Password <input class="row__input"
+                        id='password'
+                       name='password'
+                       type='password'
+                      minlength="8" required placeholder="8 or more characters"/>
+                    </label>
+                   
+                  </div>
+                  <div class='form__row'>
+                    <label class="row__label" for='password'>Confirm Password <input class="row__input"
+                        id='confirm_password'
+                               name='password'
+                               type='password'
+                              minlength="8" placeholder="confirm your password" required/>
+                            </label>
+                    
+                  </div>
+                </fieldset>
+                    <button class='form__button'>Create Account</button>
+                <p class="form__text">
+               Already have an account? <a class="text__link" href="">Log in</a>
+                </p>
+            </form>
+        </div>
+
+
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

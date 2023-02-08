@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --header-font:'Bebas Neue', cursive;
+    --text-font: 'Open Sans', sans-serif;
+    --accent-color: rgb(240, 125, 80);
+    --accent-color-faded: #F3D4C8;
+    --black: #1a1a1a;
+    --light-black: #201b1a;
+}
+
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /* ~~~~~~
+  style
+  ~~~~~~ */
+
+  /* mobile */
+  @media screen and (max-width: 600px)
+  {
+    .page{
+        flex-direction: column;
+    }
+
+    .page__background{
+        background-position-y: center;
+        min-height: 16rem;
+    }
+  }
+
+  /* desktop */
+  @media screen and (min-width: 601px)
+  {
+    .page__background{
+        min-width: 21rem;
+    }
+    
+  }
+
+  .page{
+    background-color: var(--black);
+    color: white;
+    display: flex;
+  }
+
+  .page__background{
+    background-image: url(Assets/background-img.jpg);
+    background-size: cover;
+    background-position-x: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .background__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: var(--header-font);
+    font-size: 2.2rem;
+    background-color: var(--accent-color);
+    opacity: 0.5;
+    margin-top: 58px;
+  }
+
+  ion-icon{
+    font-size: 150%;
+  }
+
+.background__source{
+    font-family: var(--text-font);
+    color: white;
+    font-size: max(0.8rem);
+    
+  }
+
+.source__link{
+    color: white;
+}
+
+
+.page__main{
+    font-family: var(--text-font);
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.top__text{
+font-size: 1rem;
+font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+line-height: 1.5;
+
+padding: 0rem 3.5rem;
+
+}
+
+.main__top{
+    padding: 20px;
+}
+
+.form__title{
+    padding: 2rem 5.1rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+font-size: clamp(1.3rem, 1.2rem + 0.5vw, 1.8rem);
+    color: var(--accent-color);
+}
+  
+.form__field{
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 44rem;
+    margin-left: 4rem;
+}
+
+.form__row{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* To avoid stretching */
+    margin-bottom: 40px;
+    margin-left: 10px;
+    width: 200px;
+}
+
+.row__label{
+    text-align: left;
+    width: 200px;
+    margin-top: 3px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+font-size: clamp(0.7rem, 0.7rem + 0.1vw, 0.8rem);
+}
+
+.row__input{
+    width: 200px !important;
+    height: initial;
+    margin-top: 5px;
+}
+
+.row__input:focus{
+    background-color: var(--accent-color-faded); 
+box-shadow: 0px 1px 4px 4px white;
+outline: none;
+}
+
+.row__input:invalid:not(:placeholder-shown){
+    background-color: var(--accent-color-faded);
+    border: 2px solid red;
+}
+
+.row__input:valid{
+    background-color: rgb(227, 239, 227);
+    border: 2px solid green;
+}
+
+.form__button{
+    border: none;
+    background-color: var(--accent-color);
+    border-radius: 18px;
+    padding: 11px 42px;
+    box-shadow: 0 8px 16px 0 var(--light-black), 0 6px 20px 0 var(--light-black);
+    margin-left: 5.2rem;
+    margin-top: 2rem;
+    color: var(--black);
+    position: relative;
+}
+
+.form__button:hover{
+    background-color: RGB(240, 108, 56);
+    cursor: pointer;
+}
+
+.form__button:active{
+    background-color: RGB(240, 108, 56);
+    top: 3px;
+    
+}
+
+.form__text{
+    padding: 63px 5rem;
+}
+
+.text__link:visited{
+    color: var(--accent-color);
+}
